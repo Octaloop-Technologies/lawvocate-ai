@@ -20,19 +20,19 @@ function App() {
     <div className="App">
       <>
         <Hero />
-        {/* <Features /> */}
-        {/* <Negotiatecontact /> */}
-        {/* <Work /> */}
-        {/* <Serves /> */}
-        {/* <Benifits /> */}
-        {/* <Testimonials /> */}
-        {/* <Reviews /> */}
-        {/* <Trusted /> */}
-        {/* <Security /> */}
-        {/* <Plans /> */}
-        {/* <Faq /> */}
-        {/* <Contactus /> */}
-        {/* <Footer /> */}
+        <Features />
+        <Negotiatecontact />
+        <Work />
+        <Serves />
+        <Benifits />
+        <Testimonials />
+        <Reviews />
+        <Trusted />
+        <Security />
+        <Plans />
+        <Faq />
+        <Contactus />
+        <Footer />
       </>
     </div>
   );

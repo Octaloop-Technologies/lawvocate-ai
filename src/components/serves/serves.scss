@@ -150,6 +150,9 @@
     }
     .serves-cards {
       gap: 60px 25px;
+      h5 {
+        font-size: 24px;
+      }
       .ist {
         gap: 15px;
         height: unset;

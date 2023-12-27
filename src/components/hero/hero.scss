@@ -71,3 +71,50 @@
     }
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .hero-main {
+    .hero-sec {
+      height: unset;
+      padding: 140px 0px;
+      .hero-content {
+        h1 {
+          font-size: 60px;
+          line-height: 100%;
+        }
+      }
+      .hero-rot {
+        .hero-img {
+          width: 500px;
+          height: 600px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-main {
+    .hero-sec {
+      .hero-content {
+        padding: 40px;
+        gap: 10px;
+        h1 {
+          font-size: 30px;
+          line-height: 100%;
+        }
+        .para-small {
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+      .hero-rot {
+        .hero-img {
+          width: 100%;
+          height: unset;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   z-index: 2;
+
   .navbar {
     display: flex;
     align-items: center;
@@ -96,6 +97,54 @@
     .submit-btn {
       padding: 16px 0px;
       width: 160px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 0px;
+  }
+  .navbar-toggler {
+    padding: 0px;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    padding: 20px;
+    background: white;
+    position: relative;
+    z-index: 9;
+    border-radius: 10px;
+  }
+  .navbar-nav {
+    column-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    a {
+      font-size: 17px;
+    }
+  }
+  .navbar-sec {
+    padding: 10px 10px 0px 20px;
+    z-index: 5;
+    .navbar-brand {
+      img {
+        width: 150px;
+        object-fit: cover;
+      }
+    }
+
+    .submit-btn {
+      padding: 10px 20px;
+      width: unset;
       font-size: 18px;
     }
   }

@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.scss";
+import Hamburger from "hamburger-react";
+
 function Navbar() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <section className="navbar-sec">
       <nav class="navbar navbar-expand-lg ">
@@ -16,7 +20,7 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <Hamburger toggled={isOpen} toggle={setOpen} />
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav  mx-auto navbar-nav-scroll">
