@@ -1,0 +1,173 @@
+.contact-sec {
+  padding: 100px 164px;
+  background: #f2f2f2;
+  .contact-card {
+    max-width: 1333.333px;
+    border-radius: 46.667px;
+    background: #fefefc;
+    box-shadow: 0px 0px 22.667px 0px #b7b7b7;
+    margin: 0px auto;
+    padding: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 73px;
+    .fields-div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 21px;
+      max-width: 800px;
+      .ist {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        width: 100%;
+        input {
+          width: 100%;
+        }
+      }
+      input,
+      textarea {
+        max-width: 100%;
+        border-radius: 10.667px;
+        border: 2.667px solid #ddd;
+        background: #fefefc;
+        padding: 25px 50px 23px 50px;
+        color: black;
+        font-family: "Inter";
+        font-size: 25.805px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &::placeholder {
+          color: #b4b4b4;
+        }
+      }
+      textarea {
+        min-height: 180px;
+      }
+    }
+    .submit-btn {
+      border-radius: 10.322px;
+      background: var(
+        --gradient,
+        linear-gradient(92deg, #4276d4 -15.2%, #2f4d8a 102.24%)
+      );
+      padding: 15.483px 30.966px;
+      color: #fff;
+      text-align: center;
+      font-family: "Inter";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s linear;
+
+      &:hover {
+        background: var(
+          --gradient,
+          linear-gradient(92deg, #2f4d8a -15.2%, #4276d4 102.24%)
+        );
+        transition: all 0.3s linear;
+        box-shadow: 0px 0px 10px 0px rgb(24, 24, 24);
+      }
+    }
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .contact-sec {
+    padding: 100px;
+    h2 {
+      font-size: 45px;
+    }
+    .contact-card {
+      padding: 60px;
+      gap: 60px;
+      .fields-div {
+        .ist {
+          input {
+            width: 100%;
+          }
+        }
+        input,
+        textarea {
+          padding: 20px 40px;
+          font-size: 22px;
+        }
+        textarea {
+          min-height: 140px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact-sec {
+    padding: 80px;
+    h2 {
+      font-size: 40px;
+    }
+    .contact-card {
+      padding: 40px;
+      gap: 40px;
+      .fields-div {
+        row-gap: 18px;
+        .ist {
+          column-gap: 15px;
+        }
+        input,
+        textarea {
+          padding: 15px 30px;
+
+          font-size: 20px;
+        }
+      }
+      .submit-btn {
+        padding: 12px 30px;
+
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-sec {
+    padding: 20px;
+    h2 {
+      font-size: 25px;
+    }
+    .contact-card {
+      padding: 20px;
+      gap: 20px;
+      .fields-div {
+        width: 100%;
+        row-gap: 15px;
+        .ist {
+          flex-direction: column;
+          row-gap: 15px;
+        }
+        input,
+        textarea {
+          padding: 10px 20px;
+          font-size: 18px;
+          line-height: 120%;
+        }
+      }
+      .submit-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+    }
+  }
+}

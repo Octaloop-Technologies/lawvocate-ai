@@ -1,0 +1,73 @@
+.hero-main {
+  position: relative;
+  width: 100%;
+  .hero-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: var(--secbackcolor);
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+      position: relative;
+      z-index: 4;
+      h1 {
+        color: var(--greycolor);
+        text-align: center;
+        font-family: "Readex Pro";
+        font-size: 84.058px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -3.362px;
+        text-transform: uppercase;
+        margin: 0px;
+        span {
+          background: linear-gradient(92deg, #33539e -15.2%, #2f4d8a 102.24%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+    .hero-rot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @keyframes rotateImage {
+        0% {
+          transform: rotate(0deg);
+        }
+        20% {
+          transform: rotate(72deg);
+        }
+        40% {
+          transform: rotate(144deg);
+        }
+        60% {
+          transform: rotate(216deg);
+        }
+        80% {
+          transform: rotate(288deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .hero-img {
+        animation: rotateImage 15s infinite linear;
+        width: 600px;
+        height: 700px;
+      }
+    }
+  }
+}

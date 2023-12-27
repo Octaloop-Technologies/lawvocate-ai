@@ -1,0 +1,316 @@
+.plans-sec {
+  background: #f2f2f2;
+  padding: 100px 164px 0px 164px;
+
+  .top {
+    max-width: 1400px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .para {
+      text-align: center;
+    }
+  }
+  .plans-cards {
+    padding: 130px 0px 100px 0px;
+    max-width: 1506px;
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+    background: url(/assets/images/plansback.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .ist,
+    .third {
+      min-height: 644px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 46.667px;
+      border: 2.667px solid #f3f3f3;
+      background: #fefefc;
+      .price {
+        margin-bottom: 31px;
+      }
+      .started {
+        margin-bottom: 72px;
+      }
+      .lists {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15.33px;
+      }
+      .list {
+        display: flex;
+        align-items: center;
+        column-gap: 13.33px;
+      }
+    }
+
+    .second {
+      min-height: 746.667px;
+      border-radius: 46.667px;
+      background: #fefefc;
+      box-shadow: 0px 0px 22.667px 0px #b7b7b7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .popular {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .price {
+        margin-bottom: 55.79px;
+      }
+      .started {
+        margin-bottom: 97.91px;
+      }
+      .lists {
+        display: flex;
+        flex-direction: column;
+        row-gap: 28px;
+      }
+      .list {
+        display: flex;
+        align-items: center;
+        column-gap: 15.5px;
+      }
+    }
+    .ist,
+    .second,
+    .third {
+      padding: 21px;
+      width: 100%;
+      .started {
+        cursor: pointer;
+        border-radius: 13.333px;
+        background: var(
+          --gradient,
+          linear-gradient(92deg, #4276d4 -15.2%, #2f4d8a 102.24%)
+        );
+        padding: 10.67px 42.67px;
+        border: none;
+        color: #fefefc;
+        text-align: center;
+        font-family: "Inter";
+        font-size: 21.333px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+      }
+      .price {
+        border-radius: 24px;
+        background: #f3f3f3;
+        padding: 20px;
+        width: 92%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      p {
+        color: var(--lightgreycolor);
+        font-family: "Inter";
+        font-size: 22.667px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.907px;
+        text-transform: capitalize;
+      }
+      .plan-type {
+        margin-bottom: 20px;
+      }
+    }
+    .started {
+      transition: all 0.3s linear;
+      &:hover {
+        background: var(
+          --gradient,
+          linear-gradient(92deg, #2f4d8a -15.2%, #4276d4 102.24%)
+        );
+        transition: all 0.3s linear;
+        box-shadow: 0px 0px 10px 0px rgb(24, 24, 24);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .plans-sec {
+    padding: 100px 100px 0px 100px;
+
+    .top {
+      gap: 20px;
+      h2 {
+        font-size: 45px;
+        line-height: 100%;
+      }
+      .para {
+        font-size: 20px;
+      }
+    }
+    .plans-cards {
+      .ist,
+      .third {
+        p {
+          font-size: 18px !important;
+          margin-bottom: 0px;
+        }
+        min-height: 550px;
+        .price {
+          margin-bottom: 20px;
+          h3 {
+            font-size: 40px;
+          }
+        }
+        .started {
+          margin-bottom: 20px;
+        }
+        .lists {
+          row-gap: 20px;
+        }
+      }
+
+      .second {
+        min-height: 700px;
+        p {
+          font-size: 18px !important;
+          margin-bottom: 0px;
+        }
+        .price {
+          margin-bottom: 30px;
+          h3 {
+            font-size: 40px;
+          }
+        }
+        .started {
+          margin-bottom: 40px;
+        }
+        .lists {
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .plans-sec {
+    padding: 80px 80px 0px 80px;
+
+    .top {
+      h2 {
+        font-size: 40px;
+        line-height: 100%;
+      }
+      .para {
+        font-size: 18px;
+      }
+    }
+    .plans-cards {
+      justify-content: center;
+      .ist,
+      .third {
+        p {
+          font-size: 16px !important;
+          margin-bottom: 0px;
+        }
+        min-height: 500px;
+        .price {
+          margin-bottom: 20px;
+          h3 {
+            font-size: 35px;
+          }
+        }
+        .started {
+          margin-bottom: 20px;
+        }
+        .lists {
+          row-gap: 20px;
+        }
+      }
+
+      .second {
+        min-height: 600px;
+        p {
+          font-size: 16px !important;
+          margin-bottom: 0px;
+        }
+        .price {
+          margin-bottom: 30px;
+          h3 {
+            font-size: 35px;
+          }
+        }
+        .started {
+          margin-bottom: 40px;
+        }
+        .lists {
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .plans-sec {
+    padding: 20px;
+
+    .top {
+      gap: 10px;
+      h2 {
+        font-size: 25px;
+        line-height: 100%;
+      }
+      .para {
+        font-size: 16px;
+      }
+    }
+    .plans-cards {
+      padding: 20px;
+      flex-direction: column;
+      row-gap: 20px;
+
+      .ist,
+      .second,
+      .third {
+        min-height: unset;
+        padding: 40px 20px;
+        max-width: 350px;
+        .price {
+          margin-bottom: 20px;
+          padding: 10px;
+          width: 100%;
+          h3 {
+            font-size: 25px;
+          }
+        }
+        .started {
+          margin-bottom: 20px;
+        }
+        .lists {
+          display: flex;
+          flex-direction: column;
+          row-gap: 15.33px;
+        }
+      }
+      .second {
+        padding: 80px 20px;
+      }
+    }
+  }
+}
