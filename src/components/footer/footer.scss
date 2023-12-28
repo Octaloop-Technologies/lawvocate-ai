@@ -1,6 +1,7 @@
 .footer {
   background: #f2f2f2;
   border-top: 2px dashed #52b6de;
+  position: relative;
   .top {
     padding: 70px 134px;
     display: flex;
@@ -75,6 +76,14 @@
     align-items: center;
     justify-content: center;
     border-top: 1px solid #9d9d9d;
+  }
+  .back-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20vw;
+    height: 18vw;
+    object-fit: contain;
   }
 }
 
@@ -191,6 +200,14 @@
     }
     .bottom {
       padding: 15px;
+    }
+    .back-img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50vw;
+      height: 42vw;
+      object-fit: contain;
     }
   }
 }

@@ -33,7 +33,6 @@ function Footer() {
               <a href="#">About</a>
               <a href="#">Contact</a>
               <a href="#">Blog</a>
-              <a href="#">Affiliate</a>
             </div>
           </div>
           <div className="ist">
@@ -57,6 +56,7 @@ function Footer() {
       <div className="bottom">
         <span>@2023 Lawvocate AI. All Rights Reserved</span>
       </div>
+      <img src="/assets/images/footerback.png" alt="..." className="back-img" />
     </section>
   );
 }

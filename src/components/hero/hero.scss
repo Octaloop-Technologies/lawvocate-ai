@@ -70,6 +70,13 @@
       }
     }
   }
+  .topscroll {
+    position: fixed;
+    z-index: 99;
+    right: 100px;
+    bottom: 100px;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 1280px) {

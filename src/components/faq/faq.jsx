@@ -7,7 +7,7 @@ function Faq() {
     <section className="faq-sec">
       <div className="top">
         <h2>
-          got <span>question?</span>
+          got <span>question</span>?
         </h2>
         <p className="para">
           Lorem ipsum dolor sit amet, consectetur adipiscing

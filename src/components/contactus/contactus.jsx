@@ -11,7 +11,7 @@ function Contactus() {
             <input type="text" placeholder="Last Name" />
           </div>
           <input type="number" placeholder="Phone No." />
-          <input type="email" placeholder="Email" />
+          <input type="email" placeholder="E-mail" />
           <textarea placeholder="Description"></textarea>
         </div>
         <button className="submit-btn">Submit</button>

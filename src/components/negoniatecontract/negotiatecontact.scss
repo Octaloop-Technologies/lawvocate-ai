@@ -1,6 +1,9 @@
 .negotiate-sec {
   background: var(--secbackcolor);
   padding: 100px;
+  h2 {
+    text-transform: capitalize;
+  }
   .neg-card {
     border-radius: 24px;
     background: #fff;
@@ -35,7 +38,13 @@
       color: #fff;
       cursor: pointer;
       transition: all 0.3s linear;
-
+      color: #fff;
+      font-family: "Inter";
+      font-size: 26.667px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
       &:hover {
         background: var(
           --gradient,
@@ -52,6 +61,9 @@
   .negotiate-sec {
     .neg-card {
       gap: 60px;
+      .explore-btn {
+        font-size: 20px;
+      }
       .top {
         .para-large {
           font-size: 24px;
