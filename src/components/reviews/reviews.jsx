@@ -17,7 +17,7 @@ function Reviews() {
               <img src="/assets/icons/Star1.svg" alt="..." />
               <img src="/assets/icons/Star1.svg" alt="..." />
               <img src="/assets/icons/Star1.svg" alt="..." />
-              <img src="/assets/icons/Star2.svg" alt="..." />
+              <img src="/assets/icons/star2.svg" alt="..." />
             </div>
           </div>
           <span>65+ Reviews</span>
