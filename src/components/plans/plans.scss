@@ -272,31 +272,29 @@
 
     .top {
       gap: 10px;
-      h2 {
-        font-size: 25px;
-        line-height: 100%;
-      }
-      .para {
-        font-size: 16px;
-      }
     }
     .plans-cards {
       padding: 20px;
       flex-direction: column;
       row-gap: 20px;
-
+      .popular {
+        width: 50%;
+      }
       .ist,
       .second,
       .third {
         min-height: unset;
         padding: 40px 20px;
         max-width: 350px;
+        p {
+          font-size: 15px !important;
+        }
         .price {
           margin-bottom: 20px;
           padding: 10px;
           width: 100%;
           h3 {
-            font-size: 25px;
+            font-size: 22px;
           }
         }
         .started {

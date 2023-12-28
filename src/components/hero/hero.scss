@@ -75,8 +75,6 @@
 @media screen and (max-width: 1280px) {
   .hero-main {
     .hero-sec {
-      height: unset;
-      padding: 140px 0px;
       .hero-content {
         h1 {
           font-size: 60px;
@@ -96,6 +94,8 @@
 @media screen and (max-width: 600px) {
   .hero-main {
     .hero-sec {
+      height: unset;
+      padding: 140px 0px;
       .hero-content {
         padding: 40px;
         gap: 10px;
