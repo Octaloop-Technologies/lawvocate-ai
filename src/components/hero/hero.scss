@@ -70,6 +70,7 @@
       }
     }
   }
+
   .topscroll {
     position: fixed;
     z-index: 99;
@@ -122,6 +123,17 @@
           object-fit: cover;
         }
       }
+    }
+
+    .topscroll {
+      position: fixed;
+      z-index: 99;
+      right: 30px;
+      bottom: 30px;
+      width: 40px;
+      object-fit: cover;
+      height: 40px;
+      cursor: pointer;
     }
   }
 }
