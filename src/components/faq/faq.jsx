@@ -62,6 +62,11 @@ function Faq() {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
+      <img
+        src="/assets/images/gotquestion.png"
+        alt="..."
+        className="gotquestionimg"
+      />
     </section>
   );
 }

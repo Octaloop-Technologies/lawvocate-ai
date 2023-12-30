@@ -12,6 +12,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
     gap: 73px;
     .fields-div {
       display: flex;

@@ -16,6 +16,10 @@
   
 }
 
+.top{
+  position: relative !important;
+  z-index: 5 !important;
+}
 h6{
   margin-bottom: 0px;
 }
@@ -98,3 +102,16 @@ font-size: 15px !important;
     font-size: 16px !important;
   }
 }
+
+
+  .herofirstimg, .herosecondimg,.featuresimg,.workimgleft,.workimg,.benefitsimgright,.benefitsimg,.trustedimg,.gotquestionimg{
+    max-width: 100% !important;
+
+  }
+  @media screen and (max-width:600px) {
+    
+    .herofirstimg, .herosecondimg,.featuresimg,.workimgleft,.workimg,.benefitsimgright,.benefitsimg,.trustedimg,.gotquestionimg{
+display: none !important;
+  
+    }
+  }

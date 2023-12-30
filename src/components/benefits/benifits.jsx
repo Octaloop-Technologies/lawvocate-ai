@@ -21,7 +21,17 @@ function Benifits() {
             <p className="para">{item.para}</p>
           </div>
         ))}
+        <img
+          src="/assets/images/benefitscenter.png"
+          alt="..."
+          className="benefitsimg"
+        />
       </div>
+      <img
+        src="/assets/images/benefitsright.png"
+        alt="..."
+        className="benefitsimgright"
+      />
     </section>
   );
 }

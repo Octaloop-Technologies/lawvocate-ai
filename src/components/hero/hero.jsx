@@ -43,6 +43,16 @@ function Hero() {
         style={{ display: `${scrollPosition > 1080 ? "" : "none"}` }}
         onClick={() => window.scrollTo(0, 0)}
       />
+      <img
+        src="/assets/images/banner1.png"
+        alt="..."
+        className="herofirstimg"
+      />
+      <img
+        src="/assets/images/banner2.png"
+        alt="..."
+        className="herosecondimg"
+      />
     </section>
   );
 }

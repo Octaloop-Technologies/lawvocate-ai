@@ -1,7 +1,7 @@
 .faq-sec {
   padding: 100px 164px;
   background: #f2f2f2;
-
+  position: relative;
   .top {
     margin: 0px auto;
     display: flex;
@@ -22,6 +22,8 @@
       border-radius: 37.333px;
       background: #fff;
       border: none;
+      position: relative;
+      z-index: 2;
       .accordion-header {
         border-radius: 37.333px;
 
@@ -56,6 +58,12 @@
         text-transform: capitalize;
       }
     }
+  }
+  .gotquestionimg {
+    position: absolute;
+    top: -60%;
+    bottom: -20%;
+    right: 0;
   }
 }
 

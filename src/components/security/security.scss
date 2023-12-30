@@ -9,6 +9,8 @@
     flex-direction: column;
     gap: 24px;
     margin-bottom: 130px;
+    position: relative;
+    z-index: 4;
     .para {
       text-align: center;
     }
@@ -28,6 +30,8 @@
       align-items: center;
       row-gap: 60px;
       width: 280px;
+      position: relative;
+      z-index: 4;
       .icon-img {
         width: 102.229px;
         height: 102.229px;

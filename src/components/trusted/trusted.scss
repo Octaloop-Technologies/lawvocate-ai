@@ -1,6 +1,7 @@
 .trusted-sec {
   background: #f2f2f2;
   padding: 100px 164px;
+  position: relative;
   .top {
     max-width: 1010px;
     margin: 0px auto;
@@ -8,6 +9,8 @@
     flex-direction: column;
     gap: 24px;
     margin-bottom: 130px;
+    position: relative;
+    z-index: 3;
     p {
       text-align: center;
     }
@@ -18,7 +21,8 @@
     gap: 90px;
     div {
       height: 288.324px;
-
+      position: relative;
+      z-index: 3;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -26,6 +30,11 @@
       background: #fff;
       box-shadow: -3.794px 7.587px 30.35px 0px rgba(0, 0, 0, 0.25);
     }
+  }
+  .trustedimg {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
 

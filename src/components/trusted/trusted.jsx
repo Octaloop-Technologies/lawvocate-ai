@@ -36,6 +36,7 @@ function Trusted() {
           />
         </div>
       </div>
+      <img src="/assets/images/trusted.png" alt="..." className="trustedimg" />
     </section>
   );
 }

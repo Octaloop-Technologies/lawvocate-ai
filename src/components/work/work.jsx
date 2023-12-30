@@ -29,7 +29,9 @@ function Work() {
             <p className="para">{item.para}</p>
           </div>
         ))}
+        <img src="/assets/images/work2.png" alt="..." className="workimg" />
       </div>
+      <img src="/assets/images/work1.png" alt="..." className="workimgleft" />
     </section>
   );
 }

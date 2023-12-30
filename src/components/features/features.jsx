@@ -63,6 +63,11 @@ function Features() {
           </div>
         </div>
       </div>
+      <img
+        src="/assets/images/features1.png"
+        alt="..."
+        className="featuresimg"
+      />
     </section>
   );
 }

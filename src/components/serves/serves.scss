@@ -2,6 +2,8 @@
   padding: 100px 164px;
   background: #f2f2f2;
   .top {
+    position: relative;
+    z-index: 4;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -17,6 +19,8 @@
     align-items: center;
     justify-content: center;
     gap: 102px 25px;
+    position: relative;
+    z-index: 4;
     .ist {
       gap: 22.33px;
       display: flex;
