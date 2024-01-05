@@ -1,6 +1,6 @@
 .testimonials-sec {
   padding: 100px 164px;
-  background: #f2f2f2;
+  background: var(--secbackcolor);
   .top {
     margin: 0px auto;
     display: flex;
@@ -19,6 +19,15 @@
     }
     .slick-arrow {
       border: none;
+    }
+
+    .slick-prev {
+      left: 0px;
+      z-index: 3;
+    }
+    .slick-next {
+      right: 2.7%;
+      left: unset;
     }
     .slick-prev:before {
       content: "";
@@ -75,6 +84,10 @@
       }
     }
     .testimonial-slider {
+      .slick-next {
+        right: 3.2%;
+        left: unset;
+      }
       .ist {
         margin: 0px auto;
         display: flex !important;
@@ -107,13 +120,24 @@
 @media screen and (max-width: 600px) {
   .testimonials-sec {
     padding: 20px;
+
     .top {
       margin-bottom: 20px;
       gap: 10px;
     }
     .testimonial-slider {
       .slick-arrow {
-        display: none !important;
+        img {
+          width: 30px;
+        }
+      }
+      .slick-prev {
+        left: 0%;
+      }
+      .slick-next {
+        right: 5%;
+
+        left: unset;
       }
 
       .ist {

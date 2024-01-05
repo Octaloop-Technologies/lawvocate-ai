@@ -21,7 +21,7 @@
       align-items: center;
       gap: 20px;
       span {
-        color: #2b2b2b;
+        color: var(--darkgreycolor);
         text-align: center;
         font-family: "Inter";
         font-size: 30.567px;
@@ -35,7 +35,7 @@
         align-items: center;
         gap: 13.8px;
         h6 {
-          color: #2b2b2b;
+          color: var(--darkgreycolor);
           text-align: center;
           font-family: "Inter";
           font-size: 38.209px;
@@ -58,7 +58,7 @@
     justify-content: center;
     row-gap: 7px;
     span {
-      color: #2b2b2b;
+      color: var(--darkgreycolor);
       text-align: center;
       font-family: "Inter";
       font-size: 16.823px;
@@ -128,8 +128,8 @@
 
 @media screen and (max-width: 600px) {
   .reviews-sec {
-    flex-direction: column-reverse;
-    row-gap: 40px;
+    flex-direction: column;
+    row-gap: 30px;
     padding: 20px;
     .left {
       display: flex;

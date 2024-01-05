@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import Benifits from "./components/benefits/benifits";
 import Contactus from "./components/contactus/contactus";
@@ -14,26 +15,46 @@ import Serves from "./components/serves/serves";
 import Testimonials from "./components/testimonials/testimonials";
 import Trusted from "./components/trusted/trusted";
 import Work from "./components/work/work";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/home/home";
 
 function App() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="App">
-      <>
-        <Hero />
-        <Features />
-        <Negotiatecontact />
-        <Work />
-        <Serves />
-        <Benifits />
-        <Testimonials />
-        <Reviews />
-        <Trusted />
-        <Security />
-        <Plans />
-        <Faq />
-        <Contactus />
-        <Footer />
-      </>
+      <img
+        src="/assets/images/topscroll.svg"
+        alt="..."
+        className="topscroll"
+        style={{
+          display: `${scrollPosition > 1080 ? "" : "none"}`,
+        }}
+        onClick={scrollToTop}
+      />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+
+      <></>
     </div>
   );
 }

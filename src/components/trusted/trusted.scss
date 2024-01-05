@@ -1,5 +1,5 @@
 .trusted-sec {
-  background: #f2f2f2;
+  background: var(--secbackcolor);
   padding: 100px 164px;
   position: relative;
   .top {
@@ -27,7 +27,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 18.969px;
-      background: #fff;
+      background: var(--whitecolor);
       box-shadow: -3.794px 7.587px 30.35px 0px rgba(0, 0, 0, 0.25);
     }
   }

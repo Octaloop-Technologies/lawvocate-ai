@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 import "./navbar.scss";
 import Hamburger from "hamburger-react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
-
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <section className="navbar-sec">
       <nav class="navbar navbar-expand-lg ">
-        <a class="navbar-brand" href="#">
+        <a
+          class="navbar-brand"
+          onClick={() => {
+            location.pathname == "/" ? window.scrollTo(0, 0) : navigate("/");
+          }}
+          style={{ cursor: "pointer" }}
+        >
           <img src="/assets/images/logo.svg" alt="..." />{" "}
         </a>
         <button

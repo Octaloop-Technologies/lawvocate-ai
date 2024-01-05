@@ -1,6 +1,6 @@
 .contact-sec {
   padding: 100px 164px;
-  background: #f2f2f2;
+  background: var(--secbackcolor);
   .contact-card {
     max-width: 1333.333px;
     border-radius: 46.667px;
@@ -57,7 +57,7 @@
         linear-gradient(92deg, #4276d4 -15.2%, #2f4d8a 102.24%)
       );
       padding: 15.483px 30.966px;
-      color: #fff;
+      color: var(--whitecolor);
       text-align: center;
       font-family: "Inter";
       font-size: 24px;

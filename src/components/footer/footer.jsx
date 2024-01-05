@@ -1,12 +1,24 @@
 import React from "react";
 import "./footer.scss";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Icon } from "@iconify/react";
 function Footer() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   return (
     <section className="footer">
       <div className="top">
         <div className="left">
-          <img src="/assets/images/logo.svg" alt="..." className="logo" />
+          <img
+            src="/assets/images/logo.svg"
+            alt="..."
+            className="logo"
+            onClick={() => {
+              location.pathname == "/" ? window.scrollTo(0, 0) : navigate("/");
+            }}
+            style={{ cursor: "pointer" }}
+          />
           <span>
             Streamlining Customer Interactions, Appointment Scheduling, and
             Contracts for Real Estate and Legal Professionals

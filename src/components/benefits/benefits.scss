@@ -1,6 +1,6 @@
 .benifits-sec {
   padding: 100px 164px;
-  background: #f2f2f2;
+  background: var(--secbackcolor);
   position: relative;
   .top {
     max-width: 1165px;
@@ -35,7 +35,7 @@
       z-index: 2;
       width: 440px;
       border-radius: 13.333px;
-      background: #fff;
+      background: var(--whitecolor);
       box-shadow: -2.667px 5.333px 21.333px 0px rgba(0, 0, 0, 0.25);
       padding: 42.667px 21.333px;
       display: flex;
@@ -55,7 +55,7 @@
         object-fit: contain;
       }
       h6 {
-        color: #2b2b2b;
+        color: var(--darkgreycolor);
 
         font-family: "Readex Pro";
         font-size: 32px;
@@ -68,7 +68,6 @@
       p {
         text-align: center;
         line-height: 177.704%;
-        color: #676767;
       }
     }
   }

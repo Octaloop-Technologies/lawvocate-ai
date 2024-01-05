@@ -81,16 +81,14 @@
     z-index: 2;
     left: 0;
   }
-
-  .topscroll {
-    position: fixed;
-    z-index: 99;
-    right: 100px;
-    bottom: 100px;
-    cursor: pointer;
-  }
 }
-
+.topscroll {
+  position: fixed;
+  z-index: 99;
+  right: 100px;
+  bottom: 100px;
+  cursor: pointer;
+}
 @media screen and (max-width: 1280px) {
   .hero-main {
     .hero-sec {
@@ -135,16 +133,15 @@
         }
       }
     }
-
-    .topscroll {
-      position: fixed;
-      z-index: 99;
-      right: 30px;
-      bottom: 30px;
-      width: 40px;
-      object-fit: cover;
-      height: 40px;
-      cursor: pointer;
-    }
+  }
+  .topscroll {
+    position: fixed;
+    z-index: 99;
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    object-fit: cover;
+    height: 40px;
+    cursor: pointer;
   }
 }
