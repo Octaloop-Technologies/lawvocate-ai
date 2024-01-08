@@ -1,42 +1,39 @@
 :root {
-  --greycolor: #6C6C76;
+  --greycolor: #6c6c76;
   --darkgreycolor: #2b2b2b;
-  --lightgreycolor: #8E8E8E;
-  --bluecolor: #2F4D8B;
-  --blackishcolor:#1C1C1C;
-  --lightblackishcolor:#474747;
-  --lightgraycolor:#767575;
-  --blackcolor:#181818;
-  --darkblackcolor:#2B2B2B;
-  --lightblackcolor:#1C1C1C;
-  --footergreycolor:#5B5B5B;
-  --footergreylightcolor:#6A6A6A;
-  --footerheadcolor:#2F2F2F;
-  --secbackcolor:#f2f2f2;
-  --whitecolor:#ffffff;
-
-  
+  --lightgreycolor: #8e8e8e;
+  --bluecolor: #2f4d8b;
+  --blackishcolor: #1c1c1c;
+  --lightblackishcolor: #474747;
+  --lightgraycolor: #767575;
+  --blackcolor: #181818;
+  --darkblackcolor: #2b2b2b;
+  --lightblackcolor: #1c1c1c;
+  --footergreycolor: #5b5b5b;
+  --footergreylightcolor: #6a6a6a;
+  --footerheadcolor: #2f2f2f;
+  --secbackcolor: #f2f2f2;
+  --whitecolor: #ffffff;
 }
 
-.top{
+.top {
   position: relative !important;
   z-index: 5 !important;
 }
-h6{
+h6 {
   margin-bottom: 0px;
 }
 
-.para{
-
-font-family: "Inter";
-font-size: 21.588px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-letter-spacing: 0.864px;
-margin-bottom: 0px;
+.para {
+  font-family: "Inter";
+  font-size: 21.588px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.864px;
+  margin-bottom: 0px;
 }
-.para-large{
+.para-large {
   font-family: "Inter";
   font-size: 26.667px;
   font-style: normal;
@@ -44,9 +41,8 @@ margin-bottom: 0px;
   line-height: normal;
   letter-spacing: 1.067px;
   margin-bottom: 0px;
-
 }
-.para-small{
+.para-small {
   font-family: "Inter";
   font-size: 24.365px;
   font-style: normal;
@@ -54,66 +50,74 @@ margin-bottom: 0px;
   line-height: normal;
   letter-spacing: 0.975px;
   margin-bottom: 0px;
-
 }
-h5{
-  color:var(--darkgreycolor);
-font-family: "Readex Pro";
-font-size: 32px;
-font-style: normal;
+h5 {
+  color: var(--darkgreycolor);
+  font-family: "Readex Pro";
+  font-size: 32px;
+  font-style: normal;
 
-line-height: 42.667px; /* 133.333% */
-text-transform: capitalize;
-margin-bottom: 0px;
-
+  line-height: 42.667px; /* 133.333% */
+  text-transform: capitalize;
+  margin-bottom: 0px;
 }
-*{
+* {
   padding: 0;
-  margin: 0
+  margin: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
 
-
-
-
-@media screen and (max-width:600px) {
-  h2{
-    font-size: 20px !important;
-    line-height: 120% !important;
+@media screen and (max-width: 600px) {
+  h2 {
+    /* font-size: 20px !important;
+    line-height: 120% !important; */
   }
-  .para{
+  .para {
     font-size: 15px !important;
     line-height: 120% !important;
   }
 
-  h5{
+  h5 {
     font-size: 18px !important;
     line-height: 120% !important;
   }
-  h6{
+  h6 {
     font-size: 20px !important;
     line-height: 120% !important;
   }
-  .para-large{
+  .para-large {
     font-size: 16px !important;
   }
-  input,textarea{
-font-size: 15px !important;
+  input,
+  textarea {
+    font-size: 15px !important;
   }
-  button{
+  button {
     font-size: 16px !important;
   }
 }
 
-
-  .herofirstimg, .herosecondimg,.featuresimg,.workimgleft,.workimg,.benefitsimgright,.benefitsimg,.trustedimg,.gotquestionimg{
-    max-width: 100% !important;
-
+.herofirstimg,
+.herosecondimg,
+.featuresimg,
+.workimgleft,
+.workimg,
+.benefitsimgright,
+.benefitsimg,
+.trustedimg,
+.gotquestionimg {
+  max-width: 100% !important;
+}
+@media screen and (max-width: 600px) {
+  .herofirstimg,
+  .herosecondimg,
+  .featuresimg,
+  .workimgleft,
+  .workimg,
+  .benefitsimgright,
+  .benefitsimg,
+  .trustedimg,
+  .gotquestionimg {
+    display: none !important;
   }
-  @media screen and (max-width:600px) {
-    
-    .herofirstimg, .herosecondimg,.featuresimg,.workimgleft,.workimg,.benefitsimgright,.benefitsimg,.trustedimg,.gotquestionimg{
-display: none !important;
-  
-    }
-  }
+}

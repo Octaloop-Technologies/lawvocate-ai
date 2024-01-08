@@ -17,6 +17,11 @@ import Trusted from "./components/trusted/trusted";
 import Work from "./components/work/work";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/home/home";
+import Signup from "./page/signup";
+import Accountrecovery from "./page/accountrecovery";
+import Resetpassword from "./page/resetpassword";
+import Signin from "./page/signin";
+import Dashboard from "./page/dashboard";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -51,8 +56,12 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/accountrecovery" element={<Accountrecovery />} />
+        <Route path="/accountreset" element={<Resetpassword />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-      <Footer />
 
       <></>
     </div>

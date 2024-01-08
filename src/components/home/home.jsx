@@ -12,6 +12,7 @@ import Contactus from "../contactus/contactus";
 import Work from "../work/work";
 import Reviews from "../reviews/reviews";
 import Security from "../security/security";
+import Footer from "../footer/footer";
 
 function Home() {
   return (
@@ -29,6 +30,7 @@ function Home() {
       <Plans />
       <Faq />
       <Contactus />
+      <Footer />
     </>
   );
 }

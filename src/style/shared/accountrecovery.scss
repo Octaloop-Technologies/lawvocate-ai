@@ -1,0 +1,650 @@
+.accountRecovery {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/images/OBJECTS.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background: linear-gradient(86deg, #0D4D80 1.8%, rgba(0, 162, 214, 0.51) 99.57%);
+
+    .signin-content {
+        width: 100%;
+
+        .signup-logo {
+            position: absolute;
+            left: 133px;
+            top: 56px;
+            // width: 100%;
+            // height: 100%;
+
+            top: 48px;
+
+            .custom {
+
+                // width: 220px;
+                // height: 61.21px;
+            }
+        }
+
+        .signup-card {
+            width: 100%;
+
+            .signupcard-content {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 169px 0px 0px 0px;
+                // height: 100%;
+                // padding: 79px 450px 80px 450px;
+                // display: flex;
+                // justify-content: center;
+
+                // align-items: center;
+                .main-card {
+                    width: 539px;
+                    // width: 100%;
+                    // height: 100%;
+                    // width: 539px;
+                    // height: 741px;
+                    flex-shrink: 0;
+                    border-radius: 40px;
+                    background: var(--white);
+                    // box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+                    // // padding: 50px 47px 110px 47px;
+                    padding: 78px 47px 134px 47px;
+
+                    border-radius: 40px;
+                    background: #FFF;
+                    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+
+                    .cardtitle {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        .leftside {
+                            text-align: center;
+
+                            h6 {
+                                // color: var(--black);
+                                // font-family: Arial;
+                                // font-size: 24px;
+                                // font-style: normal;
+                                // font-weight: 400;
+                                // line-height: normal;
+                                color: #000;
+                                font-family: Arial;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+
+                        }
+
+                        .rightside {
+                            text-align: center;
+                            // padding-block: 14px;
+
+                            h6 {
+                                // color: var(--text-secondary);
+                                // font-family: "Poppins";
+                                // font-size: 13px;
+                                // font-style: normal;
+                                // font-weight: 400;
+                                // line-height: normal;
+                                color: #8D8D8D;
+                                text-align: center;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+
+
+                            }
+                        }
+                    }
+
+                    .accountRecovery-middle {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 22px;
+                        padding: 60px 0px 65px 0px;
+
+                        .middleTop {
+
+                            h6 {
+                                // color: var(--black);
+                                // font-family: "Arial";
+                                // font-size: 16px;
+                                // font-style: normal;
+                                // font-weight: 400;
+                                // line-height: normal;
+                                color: #000;
+                                font-family: Arial;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+
+                        .middletext {
+                            h6 {
+                                // color: var(--text-secondary);
+                                // text-align: center;
+                                // font-family: "Poppins";
+                                // font-size: 13px;
+                                // font-style: normal;
+                                // font-weight: 400;
+                                // line-height: normal;
+                                color: #8D8D8D;
+                                text-align: center;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+
+                        // .middle-code {
+                        //     width: 100%;
+                        //     display: flex;
+                        //     gap: 18px;
+                        //     justify-content: center;
+
+
+                        //     .box1 {
+                        //         width: 55px;
+                        //         height: 60px;
+                        //         border-radius: 9px;
+                        //         background: var(--F6F6F6);
+                        //         display: flex;
+                        //         justify-content: center;
+                        //         align-items: center;
+                        //     }
+                        // }
+                        .middle-code {
+                            width: 100%;
+                            display: flex;
+                            gap: 18px;
+                            justify-content: center;
+                        }
+
+                        p {
+                            color: #8D8D8D;
+                            text-align: center;
+                            font-family: "Inter";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+
+                            span {
+                                color: #000;
+                                text-align: center;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .box1 {
+                            width: 55px;
+                            height: 60px;
+                            border-radius: 9px;
+                            background: var(--F6F6F6);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .box1 input {
+                            border: none;
+                            // width: 100%;
+                            // height: 100%;
+                            // border-radius: 9px;
+                            // padding: 8px;
+                            padding-left: 20px;
+                            box-sizing: border-box;
+                            width: 55px;
+                            height: 60px;
+                            border-radius: 9px;
+                            background: var(--F6F6F6);
+
+                        }
+
+                    }
+
+
+
+
+                    .card-bottom {
+                        width: 100%;
+
+
+
+                        .signin-btn {
+                            width: 100%;
+                            padding-top: 25px;
+
+                            button {
+                                width: 100%;
+                                height: 54px;
+                                border-radius: 10px;
+                                background: var(--bg, linear-gradient(92deg, #4276D4 -15.2%, #2F4D8A 102.24%));
+                                box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
+                                color: var(--white);
+
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .accountRecovery {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../assets/images/OBJECTS.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .signin-content {
+            width: 100%;
+
+            .signup-logo {
+                position: absolute;
+                left: 100px;
+                top: 28px;
+
+                .custom {}
+            }
+
+            .signup-card {
+                width: 100%;
+
+                .signupcard-content {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 50px 0px 0px 0px;
+
+
+                    .main-card {
+                        width: 539px;
+
+
+                        flex-shrink: 0;
+                        border-radius: 40px;
+                        background: var(--white);
+                        box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+
+                        padding: 50px 47px 50px 47px;
+
+                        .cardtitle {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+
+                            .leftside {
+                                text-align: center;
+
+                                h6 {
+                                    color: var(--black);
+                                    font-family: "Arial";
+                                    font-size: 24px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+
+                            }
+
+                            .rightside {
+                                text-align: center;
+
+
+                                h6 {
+                                    color: var(--text-secondary);
+                                    font-family: "Inter";
+                                    font-size: 13px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+
+
+                                }
+                            }
+                        }
+
+                        .accountRecovery-middle {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 22px;
+                            padding: 60px 0px 65px 0px;
+
+                            .middleTop {
+
+                                h6 {
+                                    color: var(--black);
+                                    font-family: "Arial";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+
+                            .middletext {
+                                h6 {
+                                    color: var(--text-secondary);
+                                    text-align: center;
+                                    font-family: "Inter";
+                                    font-size: 13px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+
+                            .middle-code {
+                                width: 100%;
+                                display: flex;
+                                gap: 18px;
+                                justify-content: center;
+                            }
+
+                            .box1 {
+                                width: 55px;
+                                height: 60px;
+                                border-radius: 9px;
+                                background: var(--F6F6F6);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .box1 input {
+                                border: none;
+
+                                padding-left: 20px;
+                                box-sizing: border-box;
+                                width: 55px;
+                                height: 60px;
+                                border-radius: 9px;
+                                background: var(--F6F6F6);
+
+                            }
+
+                        }
+
+
+
+
+                        .card-bottom {
+                            width: 100%;
+
+
+
+                            .signin-btn {
+                                width: 100%;
+                                padding-top: 25px;
+
+                                button {
+                                    width: 100%;
+                                    height: 54px;
+                                    border-radius: 10px;
+                                    background: var(--text-primary);
+                                    box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
+                                    color: var(--white);
+                                    font-family: "Inter";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .accountRecovery {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../assets/images/OBJECTS.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .signin-content {
+            width: 100%;
+
+            .signup-logo {
+                position: absolute;
+                left: 50px;
+                top: 28px;
+
+                .custom {}
+            }
+
+            .signup-card {
+                width: 100%;
+
+                .signupcard-content {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 80px 0px 0px 0px;
+
+
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .accountRecovery {
+        width: 100%;
+        // height: 100%;
+        // height: 100vh;
+        // background: white;
+        // background: linear-gradient(86deg, #0D4D80 1.8%, rgba(0, 162, 214, 0.51) 99.57%);
+
+        .signin-content {
+            width: 100%;
+            padding: 100px 10px 0px 10px;
+
+            .signup-logo {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+
+                .custom {
+                    width: 90%;
+                    // height: 20px;
+                }
+            }
+
+            .signup-card {
+                width: 100%;
+
+                .signupcard-content {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 50px 0px 50px 0px;
+
+
+                    .main-card {
+                        width: 100%;
+                        // width: 539px;
+
+
+                        flex-shrink: 0;
+                        border-radius: 40px;
+                        background: var(--white);
+                        box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+
+                        padding: 30px 10px 30px 10px;
+
+                        .cardtitle {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+
+                            .leftside {
+                                text-align: center;
+
+                                h6 {
+                                    color: var(--black);
+                                    font-family: "Arial";
+                                    font-size: 24px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+
+                            }
+
+                            .rightside {
+                                text-align: center;
+
+
+                                h6 {
+                                    color: var(--text-secondary);
+                                    font-family: "Inter";
+                                    font-size: 15px !important;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+
+
+                                }
+                            }
+                        }
+
+                        .accountRecovery-middle {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 22px;
+                            padding: 30px 0px 32px 0px;
+                            // padding: 60px 0px 65px 0px;
+
+                            .middleTop {
+
+                                h6 {
+                                    color: var(--black);
+                                    font-family: "Arial";
+                                    font-size: 18px !important;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+
+                            .middletext {
+                                h6 {
+                                    color: var(--text-secondary);
+                                    text-align: center;
+                                    font-family: "Inter";
+                                    font-size: 15px !important;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+
+                            .middle-code {
+                                width: 100%;
+                                display: flex;
+                                gap: 18px;
+                                justify-content: center;
+                            }
+
+                            .box1 {
+                                width: 55px;
+                                height: 60px;
+                                border-radius: 9px;
+                                background: var(--F6F6F6);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .box1 input {
+                                border: none;
+
+                                padding-left: 20px;
+                                box-sizing: border-box;
+                                width: 55px;
+                                height: 60px;
+                                border-radius: 9px;
+                                background: var(--F6F6F6);
+
+                            }
+
+                        }
+
+
+
+
+                        .card-bottom {
+                            width: 100%;
+
+
+
+                            .signin-btn {
+                                width: 100%;
+                                padding-top: 0px;
+
+                                button {
+                                    width: 100%;
+                                    height: 54px;
+                                    border-radius: 10px;
+                                    background: var(--text-primary);
+                                    box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
+                                    color: var(--white);
+                                    font-family: Arial;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

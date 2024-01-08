@@ -1,0 +1,326 @@
+.dashboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container-space {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dashboard .menuDiv {
+  display: none;
+  height: 10%;
+  width: 10%;
+}
+
+.dashboard .left {
+  width: 352px;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+  margin: 15px 0px 15px 15px;
+}
+.dashboard .menuIcon {
+  width: 30px;
+  margin-block: 5px;
+}
+
+.dashboard .heading {
+  padding: 35px 38px 35px 35px;
+  margin-bottom: 0px;
+}
+
+/* .sidebarPAdding {
+  padding: 0px;
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 36px;
+
+} */
+
+/* .sidebarPAdding li::marker {
+  color: transparent;
+  
+} */
+.dashboard .subHeading {
+  /* padding: 0px 37px 30px 37px; */
+}
+
+.dashboard .tab {
+  padding: 18px 18px 18px 34px;
+  cursor: pointer;
+  list-style-type: none;
+  /* color: #4b4b4b;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 500;
+  margin-left: 0px;
+  list-style-type: none;
+  border-bottom: 1px solid rgb(207, 207, 207); */
+  margin: 0px 37px 0px 37px;
+  color: #000 !important;
+  background: white;
+  font-family: "Inter";
+  font-size: 19.533px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  /* background: #4176d4; */
+  /* fill: #fff; */
+  box-shadow: 0px 0px 3.244px 0px rgba(0, 0, 0, 0.15);
+
+  border-radius: 50px;
+  /* fill: #fff; */
+  filter: drop-shadow(0px 0px 5.697px rgba(0, 0, 0, 0.15));
+}
+
+.activetab {
+  background-color: #4176d4;
+  color: white !important;
+  /* color: #000 !important; */
+  font-family: "Inter";
+  font-size: 19.463px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  /* background-color: rgb(180 237 255);
+  background-color: var(--bg-primary);
+  color: var(--primary) !important; */
+  transition: 0.3s ease-in-out;
+}
+.tab.subHeading {
+  background: white;
+  color: #000 !important;
+}
+
+/* Add the following CSS to set the active styles for each tab individually */
+.tab.subHeading.activetab {
+  background: #4176d4;
+  color: white !important;
+}
+
+.dashboard .backBtn-div {
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 0px;
+  gap: 0px;
+}
+
+.dashboard .subHeadingLogout {
+  color: #4b4b4b;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.dashboard .logoutDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard .right {
+  width: calc(100% - 367px);
+  padding-right: 50px;
+  /* padding-left: 245px; */
+  height: 100vh;
+  background: #ffffff;
+  /* height: 100%; */
+  /* padding: 30px; */
+  /* padding-top: 50px; */
+  /* height: 97vh; */
+  overflow-y: auto;
+}
+.right .rightHeader {
+  width: 100%;
+  padding-top: 19px;
+  display: flex;
+  justify-content: end;
+}
+.profileSection {
+  cursor: pointer;
+}
+.leftTopbar {
+  width: 100%;
+  padding-left: 33px;
+  padding-right: 44px;
+  /* height: 100%; */
+}
+.leftTopbar .topbarTitle {
+  width: 100%;
+  padding: 0px 0px 30px 0px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.leftTopbar .topbarTitle2 {
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.topbarTitle .new-chat {
+  /* width: 274.909px; */
+  width: 274.909px;
+  height: 59.199px;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 19.463px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 50px;
+  background: #4176d4;
+}
+.titleContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  /* padding-top: 30px; */
+}
+.Pinned {
+  padding-bottom: 15px;
+  color: #2b2b2b;
+  font-family: "Inter";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.chats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #000 !important;
+  font-family: "Inter";
+  font-size: 16.241px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #f0f1fd !important;
+  height: 43.015px;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  padding: 0px 25px 0px 25px;
+  /* width: 259.037px; */
+}
+.chatButton {
+  box-shadow: 0px 0px 3.248px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  padding: 8px;
+}
+.today {
+  color: #2b2b2b;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.chathistory {
+  color: #2b2b2b;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  padding-block: 15px;
+}
+.chatButton2 {
+  box-shadow: 0px 0px 3.248px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+.bottombarTitle {
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  left: 33px;
+  right: 0px;
+  bottom: 19px;
+}
+.bottombarTitle .new-chat {
+  width: 274.909px;
+  height: 59.199px;
+  color: #000;
+  font-family: "Inter";
+  font-size: 19.463px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 50px;
+  background: white;
+  fill: #fff;
+  filter: drop-shadow(0px 0px 5.697px rgba(0, 0, 0, 0.15));
+}
+
+@media screen and (max-width: 800px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard .left {
+    z-index: 2;
+    width: 80%;
+    padding-left: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  .dashboard .headingBack {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dashboard .menuDiv {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 10px 0;
+  }
+  .dashboard .left .backBtn-div {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .dashboard .right {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+    background: white;
+    overflow-y: auto;
+  }
+}
+
+.trans-100 {
+  transform: translateX(-800px);
+  transition: 0.1s ease-in-out;
+}
+
+.trans-0 {
+  transform: translateX(0px);
+  transition: 0.1s ease-in-out;
+}

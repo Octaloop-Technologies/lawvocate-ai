@@ -1,0 +1,1003 @@
+.signinPage {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/images/OBJECTS.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background: linear-gradient(86deg, #0D4D80 1.8%, rgba(0, 162, 214, 0.51) 99.57%);
+
+    .signin-content {
+        width: 100%;
+
+        .signup-logo {
+            position: absolute;
+            // width: 100%;
+            // height: 100%;
+
+            top: 48px;
+            padding-left: 133px;
+
+            .custom {
+
+                // width: 220px;
+                // height: 61.21px;
+            }
+        }
+
+        .signup-card {
+            width: 100%;
+
+            .signupcard-content {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 130px 0px 0px 0px;
+                // height: 100%;
+                // padding: 79px 450px 80px 450px;
+                // display: flex;
+                // justify-content: center;
+
+                // align-items: center;
+                .main-card {
+                    width: 539px;
+                    // width: 100%;
+                    // height: 100%;
+                    // width: 539px;
+                    // height: 741px;
+                    flex-shrink: 0;
+                    border-radius: 40px;
+                    background: var(--white);
+                    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+                    // padding: 50px 47px 110px 47px;
+                    // padding: 50px 47px 110px 47px;
+                    padding: 48px 47px 48px 47px;
+
+                    .cardtitle {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .leftside {
+                            h6 {
+                                color: var(--black);
+                                font-family: Arial;
+                                font-size: 52px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+
+                        }
+
+
+                    }
+
+
+
+                    .card-field {
+                        margin-top: 42px;
+
+                        .firstfield {
+                            margin-bottom: 10px;
+
+                            .label {
+                                width: 100%;
+                                padding-bottom: 19px;
+
+                                label {
+                                    color: var(--black);
+                                    font-family: "Inter";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+
+                            .inputfield {
+                                width: 100%;
+                                // padding-bottom: 18px;
+                                position: relative;
+
+                                input {
+                                    width: 100%;
+                                    position: relative;
+                                    height: 57px;
+                                    border-radius: 9px;
+                                    border: 1px solid #ADADAD;
+                                    background: var(--white);
+                                    padding: 19px 50px 19px 19px;
+
+                                    &::placeholder {
+                                        // padding: 19px 25px 19px 19px;
+                                        color: var(--808080);
+                                        font-family: "Inter";
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+
+
+                                    }
+
+                                    &:focus {
+                                        border-radius: 9px;
+                                        // outline: #4285F4;
+                                        border: 1px solid #4285F4 !important;
+                                        background: var(--white);
+                                    }
+                                }
+
+                                .eye-icon {
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 10px;
+                                    transform: translateY(-50%);
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .span {}
+
+
+                        }
+
+
+
+                        // .firstfield-signup {
+                        //   .label {
+                        //     width: 100%;
+                        //     padding-bottom: 19px;
+                        //     padding-top: 63px;
+
+                        //     label {
+                        //       color: #000;
+                        //       font-family: Arial;
+                        //       font-size: 16px;
+                        //       font-style: normal;
+                        //       font-weight: 400;
+                        //       line-height: normal;
+                        //     }
+                        //   }
+
+                        //   .inputfield {
+                        //     width: 100%;
+                        //     padding-bottom: 18px;
+
+                        //     input {
+                        //       width: 100%;
+                        //       height: 57px;
+                        //       border-radius: 9px;
+                        //       border: 1px solid #ADADAD;
+                        //       background: #FFF;
+                        //       padding: 19px 25px 19px 19px;
+
+                        //       &::placeholder {
+                        //         // padding: 19px 25px 19px 19px;
+                        //         color: #808080;
+                        //         font-family: Arial;
+                        //         font-size: 14px;
+                        //         font-style: normal;
+                        //         font-weight: 400;
+                        //         line-height: normal;
+
+
+                        //       }
+
+                        //       &:focus {
+                        //         border-radius: 9px;
+                        //         // outline: #4285F4;
+                        //         border: 1px solid #4285F4 !important;
+                        //         background: #FFF;
+                        //       }
+                        //     }
+                        //   }
+
+
+                        // }
+                    }
+
+                    .forgetPassword {
+                        width: 100%;
+                        display: flex;
+                        justify-content: end;
+
+                        span {
+                            color: #4285F4;
+                            font-family: "Inter";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .annotherAccount {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        // align-items: center;
+                        padding: 16px 0px 0px 0px;
+
+                        p {
+                            color: #8D8D8D;
+                            font-family: "Inter";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+
+                            span {
+                                color: #3F70C8;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    .line {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 13px;
+
+                        .leftline {
+                            width: 100%;
+
+                            hr {
+                                color: #9D9D9D;
+                                height: 1px;
+                            }
+                        }
+
+                        .middletext {
+                            padding-bottom: 5px;
+
+                            span {
+                                color: #8D8D8D;
+                                font-family: "Inter";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+
+                            }
+                        }
+                    }
+
+                    .cardSocialmedia {
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+
+                        .googlebtn {
+
+                            button {
+                                width: 100%;
+                                // width: 298px;
+                                height: 55px;
+                                border-radius: 9px;
+                                // background: #E9F1FF;
+                                background: var(--secondary);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 21px;
+                                // padding: 15px 0px 15px 32px;
+                                // justify-content: space-evenly;
+                                align-items: center;
+                                color: var(--4285F4);
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                border-radius: 9px;
+                                border: 1px solid #9D9D9D;
+                                background: rgba(255, 255, 255, 0.80);
+                            }
+                        }
+
+                        .facebook-btn {
+                            width: 100%;
+                            // width: 60px;
+                            height: 55px;
+                            border-radius: 9px;
+                            border-radius: 9px;
+                            // border: 1px solid #9D9D9D;
+                            background: rgba(255, 255, 255, 0.80);
+                            display: flex;
+
+                            justify-content: center;
+                            align-items: center;
+
+                            button {
+                                width: 100%;
+                                // width: 298px;
+                                height: 55px;
+                                border-radius: 9px;
+                                // background: #E9F1FF;
+                                background: var(--secondary);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 21px;
+                                // padding: 15px 0px 15px 32px;
+                                // justify-content: space-evenly;
+                                align-items: center;
+                                color: var(--4285F4);
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                border-radius: 9px;
+                                border: 1px solid #9D9D9D;
+                                background: rgba(255, 255, 255, 0.80);
+                            }
+
+                        }
+                    }
+
+                    .card-bottom {
+                        width: 100%;
+
+
+
+                        .signin-btn {
+                            width: 100%;
+                            // padding-top: 25px;
+
+                            button {
+                                width: 100%;
+                                height: 54px;
+                                border-radius: 10px;
+                                background: var(--bg, linear-gradient(92deg, #4276D4 -15.2%, #2F4D8A 102.24%));
+                                box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
+                                color: #FFF;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .signinPage {
+        width: 100%;
+        height: 100vh;
+        // background: linear-gradient(86deg, #0D4D80 1.8%, rgba(0, 162, 214, 0.51) 99.57%);
+
+        .signin-content {
+            width: 100%;
+
+            .signup-logo {
+                position: absolute;
+                top: 28px;
+                padding-left: 100px;
+
+                .custom {}
+            }
+
+            .signup-card {
+                width: 100%;
+
+                .signupcard-content {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 100px 0px 100px 0px;
+
+                    .main-card {
+
+                        width: 539px;
+
+                        flex-shrink: 0;
+                        border-radius: 40px;
+                        background: var(--white);
+                        box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+                        padding: 20px 30px 40px 30px;
+
+                        .cardtitle {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .leftside {
+                                h6 {
+                                    color: var(--black);
+                                    font-family: Arial;
+                                    font-size: 42px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+
+                            }
+
+
+                        }
+
+
+
+                        .card-field {
+                            margin-top: 15px;
+
+                            .firstfield {
+                                .label {
+                                    width: 100%;
+                                    padding-bottom: 19px;
+
+                                    label {
+                                        color: var(--black);
+                                        font-family: Arial;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                    }
+                                }
+
+                                .inputfield {
+                                    width: 100%;
+
+                                    // padding-bottom: 18px;
+
+                                    input {
+                                        width: 100%;
+                                        height: 47px;
+                                        border-radius: 9px;
+                                        border: 1px solid #ADADAD;
+                                        background: var(--white);
+                                        padding: 12px 50px 12px 19px;
+
+                                        &::placeholder {
+                                            // padding: 19px 25px 19px 19px;
+                                            color: var(--808080);
+                                            font-family: "Inter";
+                                            font-size: 14px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: normal;
+
+
+                                        }
+
+                                        &:focus {
+                                            border-radius: 9px;
+                                            // outline: #4285F4;
+                                            border: 1px solid #4285F4 !important;
+                                            background: var(--white);
+                                        }
+
+                                    }
+
+                                    .eye-icon {
+                                        position: absolute;
+                                        top: 50%;
+                                        right: 10px;
+                                        transform: translateY(-50%);
+                                        cursor: pointer;
+                                    }
+
+                                }
+
+
+                            }
+
+
+                        }
+
+                        .forgetPassword {
+                            width: 100%;
+                            display: flex;
+                            justify-content: end;
+
+                            span {
+                                color: #4285F4;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .annotherAccount {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            // align-items: center;
+                            padding: 10px 0px 0px 0px;
+
+                            p {
+                                color: #8D8D8D;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+
+                                span {
+                                    color: #3F70C8;
+                                    font-family: "Inter";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+
+                        .line {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 13px;
+
+                            .leftline {
+                                width: 100%;
+
+                                hr {
+                                    color: #9D9D9D;
+                                    height: 1px;
+                                }
+                            }
+                        }
+
+                        .cardSocialmedia {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+
+                            .googlebtn {
+
+                                button {
+
+                                    height: 47px;
+
+                                }
+                            }
+
+                            .facebook-btn {
+                                border: none;
+
+                                button {
+                                    width: 100%;
+                                    // width: 298px;
+                                    height: 47px;
+                                    border-radius: 9px;
+                                    // background: #E9F1FF;
+                                    background: var(--secondary);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 21px;
+                                    // padding: 15px 0px 15px 32px;
+                                    // justify-content: space-evenly;
+                                    align-items: center;
+                                    color: var(--4285F4);
+                                    font-family: "Inter";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    border-radius: 9px;
+                                    border: 1px solid #9D9D9D;
+                                    background: rgba(255, 255, 255, 0.80);
+                                }
+
+                            }
+                        }
+
+
+                        .card-bottom {
+                            width: 100%;
+
+
+
+                            .signin-btn {
+                                width: 100%;
+                                // padding-top: 25px;
+
+                                button {
+                                    width: 100%;
+                                    height: 47px;
+                                    border-radius: 10px;
+                                    background: var(--bg, linear-gradient(92deg, #4276D4 -15.2%, #2F4D8A 102.24%));
+                                    box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
+                                    color: var(--white);
+                                    font-family: "Inter";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .signinPage {
+        width: 100%;
+
+        // height: 100vh;
+        height: 100%;
+        // background: linear-gradient(86deg, #0D4D80 1.8%, rgba(0, 162, 214, 0.51) 99.57%);
+        padding: 10px 10px 50px 10px;
+
+        .signin-content {
+            width: 100%;
+
+            .signup-logo {
+                position: absolute;
+                // width: 100%;
+                // height: 100%;
+
+                top: 18px;
+                padding-left: 10px;
+
+                .custom {
+
+                    // width: 220px;
+                    // height: 61.21px;
+                }
+            }
+
+            .signup-card {
+                width: 100%;
+
+                .signupcard-content {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    // height: 100%;
+                    // padding: 79px 450px 80px 450px;
+                    // display: flex;
+                    // justify-content: center;
+
+                    // align-items: center;
+                    padding-top: 100px;
+
+
+
+                    .main-card {
+                        width: 100%;
+                        flex-shrink: 0;
+                        border-radius: 40px;
+                        background: var(--white);
+                        box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+                        // padding: 50px 47px 110px 47px;
+                        padding: 40px 10px 50px 10px;
+
+
+                        .cardtitle {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .leftside {
+                                h6 {
+                                    color: var(--black);
+                                    font-family: Arial;
+                                    font-size: 32px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+
+                            }
+
+
+                        }
+
+
+
+                        .card-field {
+                            .firstfield {
+                                margin-bottom: 10px;
+
+                                .label {
+                                    width: 100%;
+                                    padding-bottom: 19px;
+
+                                    label {
+                                        color: var(--black);
+                                        font-family: "Inter";
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                    }
+                                }
+
+                                .inputfield {
+                                    width: 100%;
+                                    // padding-bottom: 18px;
+
+                                    input {
+                                        width: 100%;
+                                        height: 57px;
+                                        border-radius: 9px;
+                                        border: 1px solid #ADADAD;
+                                        background: var(--white);
+                                        padding: 19px 50px 19px 19px;
+
+                                        &::placeholder {
+                                            // padding: 19px 25px 19px 19px;
+                                            color: var(--808080);
+                                            font-family: "Inter";
+                                            font-size: 14px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: normal;
+
+
+                                        }
+
+                                        &:focus {
+                                            border-radius: 9px;
+                                            // outline: #4285F4;
+                                            border: 1px solid #4285F4 !important;
+                                            background: var(--white);
+                                        }
+                                    }
+
+                                    .eye-icon {
+                                        position: absolute;
+                                        top: 55%;
+                                        right: 10px;
+                                        transform: translateY(-50%);
+                                        cursor: pointer;
+                                    }
+                                }
+
+
+                            }
+
+                            // .firstfield-signup {
+                            //   .label {
+                            //     width: 100%;
+                            //     padding-bottom: 19px;
+                            //     padding-top: 63px;
+
+                            //     label {
+                            //       color: #000;
+                            //       font-family: Arial;
+                            //       font-size: 16px;
+                            //       font-style: normal;
+                            //       font-weight: 400;
+                            //       line-height: normal;
+                            //     }
+                            //   }
+
+                            //   .inputfield {
+                            //     width: 100%;
+                            //     padding-bottom: 18px;
+
+                            //     input {
+                            //       width: 100%;
+                            //       height: 57px;
+                            //       border-radius: 9px;
+                            //       border: 1px solid #ADADAD;
+                            //       background: #FFF;
+                            //       padding: 19px 25px 19px 19px;
+
+                            //       &::placeholder {
+                            //         // padding: 19px 25px 19px 19px;
+                            //         color: #808080;
+                            //         font-family: Arial;
+                            //         font-size: 14px;
+                            //         font-style: normal;
+                            //         font-weight: 400;
+                            //         line-height: normal;
+
+
+                            //       }
+
+                            //       &:focus {
+                            //         border-radius: 9px;
+                            //         // outline: #4285F4;
+                            //         border: 1px solid #4285F4 !important;
+                            //         background: #FFF;
+                            //       }
+                            //     }
+                            //   }
+
+
+                            // }
+                        }
+
+                        .forgetPassword {
+                            width: 100%;
+                            display: flex;
+                            justify-content: end;
+
+                            span {
+                                color: #4285F4;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .annotherAccount {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            // align-items: center;
+                            padding: 16px 0px 0px 0px;
+
+                            p {
+                                color: #8D8D8D;
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+
+                                span {
+                                    color: #3F70C8;
+                                    font-family: "Inter";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+
+                        .line {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 13px;
+
+                            .leftline {
+                                width: 100%;
+
+                                hr {
+                                    color: #9D9D9D;
+                                    height: 1px;
+                                }
+                            }
+                        }
+
+                        .cardSocialmedia {
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+
+                            .googlebtn {
+
+                                button {
+                                    width: 100%;
+                                    // width: 298px;
+                                    height: 57px;
+                                    border-radius: 9px;
+                                    // background: #E9F1FF;
+                                    background: var(--secondary);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 21px;
+                                    // padding: 15px 0px 15px 32px;
+                                    // justify-content: space-evenly;
+                                    align-items: center;
+                                    color: var(--4285F4);
+                                    font-family: "Inter";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    border-radius: 9px;
+                                    border: 1px solid #9D9D9D;
+                                    background: rgba(255, 255, 255, 0.80);
+                                }
+                            }
+
+                            .facebook-btn {
+                                width: 100%;
+                                // width: 60px;
+                                height: 55px;
+                                border-radius: 9px;
+                                border-radius: 9px;
+                                // border: 1px solid #9D9D9D;
+                                background: rgba(255, 255, 255, 0.80);
+                                display: flex;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                button {
+                                    width: 100%;
+                                    // width: 298px;
+                                    height: 55px;
+                                    border-radius: 9px;
+                                    // background: #E9F1FF;
+                                    background: var(--secondary);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 21px;
+                                    // padding: 15px 0px 15px 32px;
+                                    // justify-content: space-evenly;
+                                    align-items: center;
+                                    color: var(--4285F4);
+                                    font-family: "Inter";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    border-radius: 9px;
+                                    border: 1px solid #9D9D9D;
+                                    background: rgba(255, 255, 255, 0.80);
+                                }
+
+                            }
+                        }
+
+                        .card-bottom {
+                            width: 100%;
+
+
+
+                            .signin-btn {
+                                width: 100%;
+                                padding-top: 25px;
+
+                                button {
+                                    width: 100%;
+                                    height: 54px;
+                                    border-radius: 10px;
+                                    background: var(--bg, linear-gradient(92deg, #4276D4 -15.2%, #2F4D8A 102.24%));
+                                    box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
+                                    color: var(--white);
+                                    font-family: "Inter";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
