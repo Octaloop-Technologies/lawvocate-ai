@@ -1,0 +1,420 @@
+.plans-sections {
+    // background: var(--secbackcolor);
+    padding: 100px 100px 0px 100px;
+
+    .top {
+        max-width: 1400px;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .para {
+            text-align: center;
+        }
+    }
+
+    .plans-cards {
+        // padding: 130px 0px 100px 0px;
+        max-width: 1506px;
+        display: flex;
+        align-items: center;
+        column-gap: 18px;
+        background: url(/assets/images/plansback.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .started {
+            transition: all 0.3s linear;
+            width: 90%;
+
+            &:hover {
+                background: var(--gradient,
+                        linear-gradient(92deg, #2f4d8a -15.2%, #4276d4 102.24%));
+                transition: all 0.3s linear;
+                box-shadow: 0px 0px 10px 0px rgb(24, 24, 24);
+            }
+        }
+
+        .ist,
+        .third {
+            min-height: 523px;
+            // height: 451px;
+            // min-height: 451px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            border-radius: 46.667px;
+            border: 2.667px solid #f3f3f3;
+            background: #fefefc;
+
+            .price {
+                margin-bottom: 31px;
+            }
+
+            .started {
+                margin-bottom: 72px;
+            }
+
+            .lists {
+                display: flex;
+                flex-direction: column;
+                row-gap: 15.33px;
+                // padding-right: 42px;
+            }
+
+            .list {
+                display: flex;
+                align-items: center;
+                column-gap: 13.33px;
+            }
+        }
+
+        .second {
+            min-height: 523px;
+            // min-height: 746.667px;
+            border-radius: 46.667px;
+            background: #fefefc;
+            box-shadow: 0px 0px 22.667px 0px #b7b7b7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .popular {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .price {
+                margin-bottom: 55.79px;
+            }
+
+            .started {
+                margin-bottom: 97.91px;
+            }
+
+
+
+            .lists {
+                display: flex;
+                flex-direction: column;
+                row-gap: 19px;
+                // padding-right: 30px;
+                // padding-right: 57px;
+            }
+
+            .list {
+                display: flex;
+                align-items: center;
+                column-gap: 15.5px;
+            }
+        }
+
+        .ist,
+        .second,
+        .third {
+            padding: 43px 14px 66px 14px;
+            // padding: 37px;
+            // padding: 21px;
+            // width: 100%;
+            width: 323px;
+
+            p {
+                margin-bottom: 0px;
+            }
+
+            .started {
+                cursor: pointer;
+                border-radius: 13.333px;
+                background: var(--gradient,
+                        linear-gradient(92deg, #4276d4 -15.2%, #2f4d8a 102.24%));
+                padding: 10.67px 42.67px;
+                border: none;
+                color: #FEFEFC;
+                text-align: center;
+                font-family: Arial;
+                font-size: 14.97px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 14.97px;
+                /* 100% */
+                // color: #fefefc;
+                // text-align: center;
+                // font-family: "Inter";
+                // font-size: 21.333px;
+                // font-style: normal;
+                // font-weight: 400;
+                // line-height: 100%;
+                // margin-bottom: 69px;
+            }
+
+            .price {
+                border-radius: 24px;
+                background: #f3f3f3;
+                padding: 20px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                // overflow: hidden;
+
+                h3 {
+                    // font-weight: 400 !important;
+                    color: #6C6C76;
+                    text-align: center;
+                    font-family: "Josefin Sans";
+                    font-size: 36.188px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+            }
+
+            p {
+                // color: var(--lightgreycolor);
+                // font-family: "Inter";
+                // font-size: 22.667px;
+                // font-style: normal;
+                // font-weight: 400;
+                // line-height: normal;
+                // letter-spacing: 0.907px;
+                // text-transform: capitalize;
+                color: #8E8E8E;
+
+                font-family: Arial;
+                font-size: 15.905px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.636px;
+                text-transform: capitalize;
+            }
+
+            .plan-type {
+                margin-bottom: 20px;
+                color: #8E8E8E;
+                text-align: center;
+                font-family: "Inter";
+                font-size: 15.905px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.636px;
+                text-transform: capitalize;
+
+            }
+        }
+    }
+}
+
+// @media screen and (max-width: 1500px) {
+//     .plans-sections {
+//         padding: 100px 100px 0px 100px;
+
+//         .top {
+//             gap: 20px;
+
+//             h2 {
+//                 font-size: 45px;
+//                 line-height: 100%;
+//             }
+
+//             .para {
+//                 font-size: 20px;
+//             }
+//         }
+
+//         .plans-cards {
+
+//             .ist,
+//             .third {
+//                 p {
+//                     font-size: 18px !important;
+//                     margin-bottom: 0px;
+//                 }
+
+//                 min-height: 550px;
+
+//                 .price {
+//                     margin-bottom: 20px;
+
+//                     h3 {
+//                         font-size: 40px;
+//                     }
+//                 }
+
+//                 .started {
+//                     margin-bottom: 20px;
+//                 }
+
+//                 .lists {
+//                     row-gap: 20px;
+//                 }
+//             }
+
+//             .second {
+//                 min-height: 700px;
+
+//                 p {
+//                     font-size: 18px !important;
+//                     margin-bottom: 0px;
+//                 }
+
+//                 .price {
+//                     margin-bottom: 30px;
+
+//                     h3 {
+//                         font-size: 40px;
+//                     }
+//                 }
+
+//                 .started {
+//                     margin-bottom: 40px;
+//                 }
+
+//                 .lists {
+//                     display: flex;
+//                     flex-direction: column;
+//                     row-gap: 20px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 1280px) {
+//     .plans-sections {
+//         padding: 80px 80px 0px 80px;
+
+//         .top {
+//             h2 {
+//                 font-size: 40px;
+//                 line-height: 100%;
+//             }
+
+//             .para {
+//                 font-size: 18px;
+//             }
+//         }
+
+//         .plans-cards {
+//             justify-content: center;
+
+//             .ist,
+//             .third {
+//                 p {
+//                     font-size: 16px !important;
+//                     margin-bottom: 0px;
+//                 }
+
+//                 min-height: 500px;
+
+//                 .price {
+//                     margin-bottom: 20px;
+
+//                     h3 {
+//                         font-size: 35px;
+//                     }
+//                 }
+
+//                 .started {
+//                     margin-bottom: 20px;
+//                 }
+
+//                 .lists {
+//                     row-gap: 20px;
+//                 }
+//             }
+
+//             .second {
+//                 min-height: 600px;
+
+//                 p {
+//                     font-size: 16px !important;
+//                     margin-bottom: 0px;
+//                 }
+
+//                 .price {
+//                     margin-bottom: 30px;
+
+//                     h3 {
+//                         font-size: 35px;
+//                     }
+//                 }
+
+//                 .started {
+//                     margin-bottom: 40px;
+//                 }
+
+//                 .lists {
+//                     display: flex;
+//                     flex-direction: column;
+//                     row-gap: 20px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 600px) {
+//     .plans-sections {
+//         padding: 20px;
+
+//         .top {
+//             gap: 10px;
+//         }
+
+//         .plans-cards {
+//             padding: 20px;
+//             flex-direction: column;
+//             row-gap: 20px;
+
+//             .popular {
+//                 width: 50%;
+//             }
+
+//             .ist,
+//             .second,
+//             .third {
+//                 min-height: unset;
+//                 padding: 40px 20px;
+//                 max-width: 350px;
+
+//                 p {
+//                     font-size: 15px !important;
+//                 }
+
+//                 .price {
+//                     margin-bottom: 20px;
+//                     padding: 10px;
+//                     width: 100%;
+
+//                     h3 {
+//                         font-size: 22px;
+//                     }
+//                 }
+
+//                 .started {
+//                     margin-bottom: 20px;
+//                 }
+
+//                 .lists {
+//                     display: flex;
+//                     flex-direction: column;
+//                     row-gap: 15.33px;
+//                 }
+//             }
+
+//             .second {
+//                 padding: 80px 20px;
+//             }
+//         }
+//     }
+// }

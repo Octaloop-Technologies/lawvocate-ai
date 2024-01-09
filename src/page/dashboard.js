@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Icon } from "@iconify/react";
 import "../style/dashboard.css";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/Group 138.svg";
 import Profile from "../assets/images/profile.svg";
 import Newchat from "../components/dashboards/newchat/newchat";
+import Personalinfo from "../components/dashboards/personalinfo/personalinfo";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Settings from "../components/dashboards/setings/settings";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -37,6 +41,40 @@ const Dashboard = () => {
   const handleDrawer = () => {
     setIsVisible(!isVisible);
   };
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+    setShowPersonalInfo(false);
+  };
+  const handlechilddropdownClick = (selectedOption) => {
+    setIsOpen(false);
+  };
+  // Additional logic to handle span click if needed
+
+  const [showPersonalInfo, setShowPersonalInfo] = useState(false);
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const [show1, setShow1] = useState(false);
+
+  const handleClose1 = () => setShow1(false);
+  const handleShow1 = () => setShow1(true);
   return (
     <>
       {" "}
@@ -255,17 +293,215 @@ const Dashboard = () => {
 
         <div className="right">
           <div className="rightHeader">
-            <div className="profileSection">
-              <img src={Profile} alt="profile" />
+            <div className="profileSection" ref={dropdownRef}>
+              <img src={Profile} alt="profile" onClick={toggleDropdown} />
+              {isOpen && (
+                <div className="dropdownContent">
+                  <div
+                    className="topSection"
+                    onClick={handlechilddropdownClick}
+                  >
+                    <div className="topLeft" onClick={handleShow}>
+                      <span className="Personal-info">Personal info</span>
+                    </div>
+                    <div className="topLeft" onClick={handleShow}>
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="28"
+                          height="28"
+                          viewBox="0 0 28 28"
+                          fill="none"
+                        >
+                          <path
+                            d="M3.5 1.16669H17.983L24.5 7.68369V26.8334H3.5V1.16669ZM5.83333 3.50002V24.5H22.1667V8.64969L17.017 3.50002H5.83333ZM14 10.5C13.5359 10.5 13.0908 10.6844 12.7626 11.0126C12.4344 11.3408 12.25 11.7859 12.25 12.25C12.25 12.7142 12.4344 13.1593 12.7626 13.4875C13.0908 13.8156 13.5359 14 14 14C14.4641 14 14.9092 13.8156 15.2374 13.4875C15.5656 13.1593 15.75 12.7142 15.75 12.25C15.75 11.7859 15.5656 11.3408 15.2374 11.0126C14.9092 10.6844 14.4641 10.5 14 10.5ZM9.91667 12.25C9.91667 11.7138 10.0223 11.1828 10.2275 10.6874C10.4327 10.192 10.7335 9.74184 11.1126 9.36267C11.4918 8.9835 11.942 8.68272 12.4374 8.47751C12.9328 8.27231 13.4638 8.16669 14 8.16669C14.5362 8.16669 15.0672 8.27231 15.5626 8.47751C16.058 8.68272 16.5082 8.9835 16.8874 9.36267C17.2665 9.74184 17.5673 10.192 17.7725 10.6874C17.9777 11.1828 18.0833 11.7138 18.0833 12.25C18.0833 13.333 17.6531 14.3716 16.8874 15.1374C16.1216 15.9031 15.083 16.3334 14 16.3334C12.917 16.3334 11.8784 15.9031 11.1126 15.1374C10.3469 14.3716 9.91667 13.333 9.91667 12.25ZM7 22.1667C7 20.929 7.49166 19.742 8.36683 18.8669C9.242 17.9917 10.429 17.5 11.6667 17.5H16.3333C17.571 17.5 18.758 17.9917 19.6332 18.8669C20.5083 19.742 21 20.929 21 22.1667V23.3334H18.6667V22.1667C18.6667 21.5478 18.4208 20.9544 17.9832 20.5168C17.5457 20.0792 16.9522 19.8334 16.3333 19.8334H11.6667C11.0478 19.8334 10.4543 20.0792 10.0168 20.5168C9.57917 20.9544 9.33333 21.5478 9.33333 22.1667V23.3334H7V22.1667Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="topSection"
+                    onClick={handlechilddropdownClick}
+                  >
+                    <div className="topLeft">
+                      <span className="Personal-info" onClick={handleShow1}>
+                        Delete account
+                      </span>
+                    </div>
+                    <div className="topLeft" onClick={handleShow1}>
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="22"
+                          viewBox="0 0 20 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M4.16675 21.5C3.52508 21.5 2.97578 21.2715 2.51883 20.8146C2.06189 20.3576 1.83341 19.8083 1.83341 19.1667V4H0.666748V1.66667H6.50008V0.5H13.5001V1.66667H19.3334V4H18.1667V19.1667C18.1667 19.8083 17.9383 20.3576 17.4813 20.8146C17.0244 21.2715 16.4751 21.5 15.8334 21.5H4.16675ZM15.8334 4H4.16675V19.1667H15.8334V4ZM6.50008 16.8333H8.83341V6.33333H6.50008V16.8333ZM11.1667 16.8333H13.5001V6.33333H11.1667V16.8333Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="topSection"
+                    onClick={handlechilddropdownClick}
+                  >
+                    <div className="topLeft">
+                      <span className="Personal-info">Log out</span>
+                    </div>
+                    <div className="topLeft">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="29"
+                          height="28"
+                          viewBox="0 0 29 28"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.1126 3.79169C14.3447 3.79169 14.5673 3.88387 14.7313 4.04797C14.8954 4.21206 14.9876 4.43462 14.9876 4.66669C14.9876 4.89875 14.8954 5.12131 14.7313 5.28541C14.5673 5.4495 14.3447 5.54169 14.1126 5.54169C11.8693 5.54169 9.71793 6.43283 8.13169 8.01908C6.54544 9.60532 5.6543 11.7567 5.6543 14C5.6543 16.2433 6.54544 18.3947 8.13169 19.981C9.71793 21.5672 11.8693 22.4584 14.1126 22.4584C14.3447 22.4584 14.5673 22.5505 14.7313 22.7146C14.8954 22.8787 14.9876 23.1013 14.9876 23.3334C14.9876 23.5654 14.8954 23.788 14.7313 23.9521C14.5673 24.1162 14.3447 24.2084 14.1126 24.2084C11.4052 24.2084 8.80868 23.1328 6.89425 21.2184C4.97981 19.304 3.9043 16.7074 3.9043 14C3.9043 11.2926 4.97981 8.69607 6.89425 6.78164C8.80868 4.8672 11.4052 3.79169 14.1126 3.79169Z"
+                            fill="black"
+                          />
+                          <path
+                            d="M19.3276 11.1184C19.1731 10.9525 19.0889 10.7331 19.0929 10.5064C19.0969 10.2797 19.1888 10.0634 19.3491 9.90313C19.5094 9.74282 19.7257 9.65099 19.9524 9.64699C20.179 9.64299 20.3984 9.72713 20.5643 9.88169L24.0643 13.3817C24.2282 13.5458 24.3202 13.7681 24.3202 14C24.3202 14.2319 24.2282 14.4543 24.0643 14.6184L20.5643 18.1184C20.4842 18.2043 20.3876 18.2733 20.2803 18.3211C20.1729 18.3689 20.0571 18.3946 19.9396 18.3967C19.8221 18.3988 19.7054 18.3772 19.5964 18.3332C19.4875 18.2892 19.3885 18.2237 19.3054 18.1406C19.2223 18.0575 19.1568 17.9585 19.1128 17.8496C19.0688 17.7406 19.0472 17.6239 19.0493 17.5064C19.0513 17.3889 19.0771 17.2731 19.1249 17.1657C19.1727 17.0584 19.2417 16.9618 19.3276 16.8817L21.3343 14.875H11.7793C11.5472 14.875 11.3247 14.7828 11.1606 14.6187C10.9965 14.4546 10.9043 14.2321 10.9043 14C10.9043 13.768 10.9965 13.5454 11.1606 13.3813C11.3247 13.2172 11.5472 13.125 11.7793 13.125H21.3343L19.3276 11.1184Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
           {activeTab === "tab1" && <Newchat />} {/* profile */}
-          {activeTab === "tab2" && <span>test2</span>} {/* orders */}
+          {activeTab === "tab2" && <Settings />} {/* orders */}
           {activeTab === "tab3" && <span>test3</span>} {/* My wallet */}
           {activeTab === "tab4" && <span>test4</span>} {/* wishlist */}
           {activeTab === "tab5" && <span>test5</span>} {/* referrals */}
         </div>
       </section>
+      <Modal show={show} onHide={handleClose} size="lg" centered>
+        <Modal.Body className="modalMainbody">
+          <div className="modalBody">
+            <div className="modalContent">
+              <div className="modalTitle">
+                <span className="profileCustomization">
+                  User profile customization
+                </span>
+              </div>
+              <div className="modalSubheading">
+                <span className="belowFields">Fill the below fields</span>
+              </div>
+              <div className="modalFields">
+                <div className="leftside">
+                  <input type="text" placeholder="Name" className="nameInput" />
+                </div>
+                <div className="leftside">
+                  <input
+                    type="text"
+                    placeholder="Occupation"
+                    className="occupationInput"
+                  />
+                </div>
+              </div>
+              <div className="modalFields">
+                <div className="leftside">
+                  <input
+                    type="text"
+                    placeholder="Date of  birth"
+                    className="nameInput"
+                  />
+                </div>
+                <div className="leftside">
+                  <input
+                    type="text"
+                    placeholder="Location"
+                    className="occupationInput"
+                  />
+                </div>
+              </div>
+              <div className="modalFields">
+                <div className="leftside">
+                  <input
+                    type="text"
+                    placeholder="Position"
+                    className="nameInput"
+                  />
+                </div>
+                <div className="leftside">
+                  <input
+                    type="text"
+                    placeholder="Phone Number"
+                    className="occupationInput"
+                  />
+                </div>
+              </div>
+              <div className="modalFields">
+                <div className="leftside">
+                  <input
+                    type="text"
+                    placeholder="Address"
+                    className="nameInput"
+                  />
+                </div>
+              </div>
+              <div className="modalline">
+                <div className="leftsideline">
+                  <hr className="linehr" />
+                </div>
+                <div className="middlesidetext">
+                  <span className="And">And</span>
+                </div>
+                <div className="leftsideline">
+                  <hr className="linehr" />
+                </div>
+              </div>
+              <div className="modalBottom">
+                <div className="bottomTitle">
+                  <span className="bottommQuestion">
+                    What would you like Lawvocate.ai to know about yourself?
+                  </span>
+                </div>
+                <div className="modalFieldss">
+                  <div className="leftside">
+                    <input
+                      type="text"
+                      placeholder="Type here"
+                      className="nameInput"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
+      <Modal show={show1} onHide={handleClose1} centered>
+        <Modal.Body className="secondmaodalBody">
+          <div className="secondmodal">
+            <div className="secondmodalContent">
+              <h6 className="deleteAccount"> Delete Account</h6>
+              <span className="confirmdelete">
+                Are you sure you want to delete your account?
+              </span>
+            </div>
+            <div className="secondmodalFotter">
+              <div className="footerLeftside" onClick={handleClose1}>
+                <span className="cancel">Cancel</span>
+              </div>
+              <div className="footerLeftside" onClick={handleClose1}>
+                <span className="delete">Delete</span>
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
     </>
   );
 };

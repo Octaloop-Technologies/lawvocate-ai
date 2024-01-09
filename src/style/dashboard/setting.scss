@@ -1,0 +1,78 @@
+.settings {
+    width: 100%;
+
+    .settingsContent {
+        width: 100%;
+        padding: 50px 0px 50px 0px;
+
+        .setingHeader {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .settinghContent {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .toggle-container {
+                    // width: 100%;
+                    // width: 100%;
+                    width: fit-content;
+                    // width: 732px;
+                    // width: 932px;
+                    height: 70px;
+                    border-radius: 44.907px;
+                    background: #3F70C8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+
+                    .toggle-button {
+                        border-radius: 53.889px;
+                        background: #3F70C8;
+                        // background-color: pink; /* Default background color */
+                        color: #f8fdff;
+                        /* Default text color */
+                        // width: 284px;
+                        height: 58px;
+                        border: none;
+                        /* Remove default button border */
+                        font-family: "Inter";
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        text-transform: capitalize;
+                        transition: 0.7s, color 0.7s;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        // margin-right: 20px;
+                        // margin-left: 20px;
+
+                        &.active {
+                            background: #f8fdff;
+                            color: #3f70c8;
+                            font-family: "Inter";
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            text-transform: capitalize;
+                        }
+
+                        &:hover {
+                            // background: #f8fdff;
+                            // color: #3f70c8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

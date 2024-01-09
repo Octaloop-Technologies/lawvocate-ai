@@ -135,12 +135,14 @@
   padding-right: 50px;
   /* padding-left: 245px; */
   height: 100vh;
-  background: #ffffff;
+  /* background: #ffffff; */
   /* height: 100%; */
   /* padding: 30px; */
   /* padding-top: 50px; */
   /* height: 97vh; */
   overflow-y: auto;
+  background-image: url("../assets/images/bg-dashboard.png");
+  background-size: contain;
 }
 .right .rightHeader {
   width: 100%;
@@ -249,7 +251,7 @@
   margin-bottom: 15px;
 }
 .bottombarTitle {
-  width: 100%;
+  /* width: 100%; */
   padding: 0px 0px 0px 0px;
   position: absolute;
   z-index: 3;
@@ -257,6 +259,8 @@
   left: 33px;
   right: 0px;
   bottom: 19px;
+  background-color: #000;
+  height: 100px;
 }
 .bottombarTitle .new-chat {
   width: 274.909px;
@@ -274,7 +278,231 @@
   fill: #fff;
   filter: drop-shadow(0px 0px 5.697px rgba(0, 0, 0, 0.15));
 }
+/* dropdown css here */
+.profileSection .dropdownContent {
+  width: 279px;
+  height: 207px;
 
+  /* border-radius: 0px 0px 5px 5px; */
+  border-radius: 10px;
+  background: #fff;
+  /* background: #fff; */
+  position: absolute;
+  top: 80px;
+  /* left: 0; */
+  right: 50px;
+  box-shadow: 0px 0px 15.905px 0px #b7b7b7;
+
+  /* border-radius: 20px; */
+}
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 0px 0px 5px 5px;
+  background: #fff;
+}
+.topSection:hover {
+  background: #f3f3f3;
+}
+.topLeft .Personal-info {
+  color: #000;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+/* dropdown css end */
+/* personal modal css here */
+.modalMainbody {
+  padding: 0px;
+}
+.modalBody {
+  width: 100%;
+}
+.modalBody .modalContent {
+  width: 100%;
+  padding: 39px 29px 39px 29px;
+}
+.modalContent .modalTitle {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.modalTitle .profileCustomization {
+  color: #000;
+  font-family: "Inter";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.modalSubheading {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.modalSubheading .belowFields {
+  color: #000;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.modalFields {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+
+  gap: 41px;
+}
+.leftside {
+  width: 100%;
+}
+.nameInput {
+  width: 100%;
+  height: 53.414px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nameInput::placeholder {
+  color: #a5a5a5;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 41px;
+}
+.occupationInput {
+  width: 100%;
+  height: 53.414px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.occupationInput::placeholder {
+  color: #a5a5a5;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 41px;
+}
+.modalline {
+  display: flex;
+  align-items: center;
+}
+.modalline .leftsideline {
+  width: 100%;
+}
+.middlesidetext {
+  margin-inline: 10px;
+}
+.middlesidetext .And {
+  color: #8d8d8d;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.modalBottom {
+  width: 100%;
+}
+.bottomTitle {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.bottommQuestion {
+  color: #000;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* personal modal css end  here */
+
+/* delete modal css  start here  */
+.secondmaodalBody {
+  padding: 0px;
+}
+.secondmodal {
+  width: 100%;
+}
+.secondmodalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-block: 25px;
+}
+.secondmodalContent .deleteAccount {
+  color: #000;
+  font-family: "Readex Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.secondmodalContent .confirmdelete {
+  color: #000;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.secondmodalFotter {
+  display: flex;
+  width: 100%;
+  border-top: 2px solid #e4e5f1;
+}
+.secondmodalFotter .footerLeftside {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 80px 20px 80px;
+  border-left: 2px solid #e4e5f1;
+}
+.footerLeftside .cancel {
+  color: #497aef;
+  font-family: "Readex Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.footerLeftside .delete {
+  color: #ff0e0e;
+  font-family: "Readex Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+/* delete modal css  end here  */
 @media screen and (max-width: 800px) {
   .dashboard {
     display: flex;
