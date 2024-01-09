@@ -251,7 +251,7 @@
   margin-bottom: 15px;
 }
 .bottombarTitle {
-  /* width: 100%; */
+  width: 100%;
   padding: 0px 0px 0px 0px;
   position: absolute;
   z-index: 3;
@@ -259,8 +259,6 @@
   left: 33px;
   right: 0px;
   bottom: 19px;
-  background-color: #000;
-  height: 100px;
 }
 .bottombarTitle .new-chat {
   width: 274.909px;
